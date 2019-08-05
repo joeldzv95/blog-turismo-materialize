@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    border: 1px solid black;
+}
+
+body{
+    background: transparent;
+    position: relative;
+}
+.fondo-top-dos{
+    width: 100%;
+    height: 100vh;
+    background: url("/img/fondo.png") no-repeat;
+    position: fixed;
+    z-index: -2;
+}
+.fondo-top-dos::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    opacity: 0.5;
+    z-index: -2;
+    
+}
+
+.fondo-top{
+    background: rgb(33, 150, 243);
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    
+}
+
+.columna-logo{
+    text-align: center;
+    
+}
+
+.logo{
+    width: 20%;
+    border-radius: 10px;
+    margin: 10px;
+    transform: translateY(20px);
+    box-shadow: 2px 6px 20px  gray;
+}
+
+.botones-nav{
+    margin-top:3vh;
+}
+
+.logoredes{
+    width: 50px;
+    margin: 20px;
+}
+
+.ima-col1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.ima-col2{
+    width: 500px;
+    height: 620px;
+    object-fit: cover;
+    margin-top: 10px;
+
+}
+.columna-dos{
+   text-align: center;
+}
+.contenido{
+    margin: 10px;
+    height: 100%;
+    padding: 10px;
+}
+.imaconte{
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    margin-top: 50px;
+}
+.parrafo-dos{
+    margin-top: 10px;
+}
+.contenido-dos{
+    margin: 10px;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.pp{
+    width: 150px;
+}
+.comentario{
+    margin: 10px;
+}
+@media (max-width:768px){
+    .logo{
+        width: 100px;
+        margin-top: 10px;
+        transform: translateY(0);
+        
+    }
+    .ima-col1, .ima-col2 {
+        width: 100%;
+        object-fit: cover;
+        
+    }
+    .sierra , .sagrada{
+        text-align: center;
+    }
+    .imaconte{
+        width: 280px;
+        margin: 10px;
+    }
+}
+
+@media (max-width:380px){
+    
+    .logo{
+        width: 100px;
+        margin-top: 10px;
+        transform: translateY(0);
+        
+    }
+    
+    .menu-iconos{
+        width: 10px !important;
+        margin: 1px;
+    }
+    .contenedor-nav{
+        text-align: center;
+    }
+    .ima-col1, .ima-col2 {
+        width: 300px;
+        
+    }
+    .imaconte{
+        width: 280px;
+        margin: 10px;
+    }
+    .sierra , .sagrada{
+        text-align: center;
+    }
+    .galeria-uno , .galeria-tres{
+        text-align: center;
+    }
+
+    
+}
